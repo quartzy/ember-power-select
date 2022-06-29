@@ -13,7 +13,7 @@
   @calculatePosition={{this.calculatePosition}}
   ...attributes as |dropdown|>
   <dropdown.Trigger
-    @eventType={{or @eventType "mousedown"}}
+    @eventType={{or @eventType "click"}}
     {{on "keydown" this.handleTriggerKeydown}}
     {{on "focus" this.handleTriggerFocus}}
     {{on "blur" this.handleTriggerBlur}}
